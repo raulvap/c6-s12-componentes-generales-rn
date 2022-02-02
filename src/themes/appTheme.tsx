@@ -12,13 +12,6 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 35,
     fontWeight: 'bold',
-    color: '#283747',
-  },
-  mainColor: {
-    color: '#2471A3',
-  },
-  secondaryColor: {
-    color: '#7FB3D5',
   },
   // --- SWITCHES ---
   switchRow: {
@@ -28,7 +21,6 @@ export const styles = StyleSheet.create({
     marginBottom: 15,
   },
   switchText: {
-    color: '#283747',
     fontSize: 25,
   },
 });

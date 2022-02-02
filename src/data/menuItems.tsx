@@ -37,13 +37,23 @@ export const menuItems: MenuItem[] = [
     component: 'SectionListScreen',
   },
   {
+    name: 'Slides Screen',
+    icon: 'phone-portrait-outline',
+    component: 'SlidesScreen',
+  },
+  {
     name: 'Switches',
-    icon: 'contrast-outline',
+    icon: 'toggle',
     component: 'SwitchScreen',
   },
   {
     name: 'Text Inputs',
     icon: 'document-text-outline',
     component: 'TextInputScreen',
+  },
+  {
+    name: 'Theme App Setting',
+    icon: 'contrast-outline',
+    component: 'ThemeAppScreen',
   },
 ];

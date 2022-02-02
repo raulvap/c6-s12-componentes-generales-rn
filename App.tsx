@@ -1,16 +1,39 @@
 import 'react-native-gesture-handler';
 
-import {NavigationContainer} from '@react-navigation/native';
-import {View, Text} from 'react-native';
+import {
+  DarkTheme,
+  DefaultTheme,
+  NavigationContainer,
+  Theme,
+} from '@react-navigation/native';
 import React from 'react';
 import {Navigation} from './src/navigations/Navigation';
+import {ThemeProvider} from './src/context/themeContext/ThemeContext';
+
+// Para crear un theme para Dark y Light (clase 228)
+// const customTheme: Theme = {
+//   dark: true,
+//   colors: {
+//     ...DefaultTheme.colors,
+//     // primary: string,
+//     // background: string,
+//     // card: string,
+//     // text: string,
+//     // border: string,
+//     // notification: string,
+//   },
+// };
 
 const App = () => {
   return (
-    <NavigationContainer>
+    <AppState>
       <Navigation />
-    </NavigationContainer>
+    </AppState>
   );
+};
+
+const AppState = ({children}: any) => {
+  return <ThemeProvider>{children}</ThemeProvider>;
 };
 
 export default App;
